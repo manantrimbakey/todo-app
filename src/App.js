@@ -12,28 +12,28 @@ export default class App extends React.Component {
 
     render() {
         let data = (
-            <div class="slds-card full-width-relative full-height-relative">
-                <div class="slds-card__header slds-grid">
-                    <div class="slds-media slds-media_center slds-has-flexi-truncate">
-                        <div class="slds-media__body">
-                            <h2 class="slds-text-heading_small">Notes App</h2>
+            <div className="slds-card full-width-relative full-height-relative">
+                <div className="slds-card__header slds-grid">
+                    <div className="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div className="slds-media__body">
+                            <h2 className="slds-text-heading_small">Notes App</h2>
                         </div>
                     </div>
-                    <div class="slds-no-flex">
-                        <div class="slds-button-group" role="group">
+                    <div className="slds-no-flex">
+                        <div className="slds-button-group" role="group">
                             <button
-                                class="slds-button slds-button_brand"
+                                className="slds-button slds-button_brand"
                                 onClick={() => {
                                     this.handleAddClick();
                                 }}
                             >
                                 Add
                             </button>
-                            <button class="slds-button slds-button_neutral">Refresh</button>
+                            <button className="slds-button slds-button_neutral">Refresh</button>
                         </div>
                     </div>
                 </div>
-                <div class="slds-card__body slds-p-horizontal_medium slds-p-vertical_medium">
+                <div className="slds-card__body slds-p-horizontal_medium slds-p-vertical_medium">
                     {this.state.isAddCardOn ? (
                         <NewNote
                             onClose={() => {
