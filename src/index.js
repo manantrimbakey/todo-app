@@ -9,9 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
     <React.StrictMode>
-        <div class="slds-p-horizontal_large slds-p-vertical_large full-height full-width">
+        <div class="full-height full-width">
             <div class="slds-box_border slds-theme_default full-height-relative full-width-relative">
-                <div class=" slds-p-horizontal_large slds-p-vertical_large">
+                <div class=" slds-p-horizontal_large slds-p-vertical_large full-height-relative full-width-relative">
                     <App />
                 </div>
             </div>

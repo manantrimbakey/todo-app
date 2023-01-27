@@ -12,7 +12,7 @@ export default class App extends React.Component {
 
     render() {
         let data = (
-            <div class="slds-card">
+            <div class="slds-card full-width-relative full-height-relative">
                 <div class="slds-card__header slds-grid">
                     <div class="slds-media slds-media_center slds-has-flexi-truncate">
                         <div class="slds-media__body">
