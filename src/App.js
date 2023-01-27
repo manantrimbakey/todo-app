@@ -1,3 +1,4 @@
+import { Spinner } from "@salesforce/design-system-react";
 import React from "react";
 import "./index.css";
 import NewNote from "./NewNote";
@@ -7,12 +8,14 @@ export default class App extends React.Component {
         super(props);
         this.state = {
             isAddCardOn: false,
+            isSpinnerOn: false,
         };
     }
 
     render() {
         let data = (
-            <div className="slds-card full-width-relative full-height-relative">
+            <div className="slds-card full-width-relative full-height-relative slds-is-relative">
+            {this.state.isSpinnerOn && <Spinner />}
                 <div className="slds-card__header slds-grid">
                     <div className="slds-media slds-media_center slds-has-flexi-truncate">
                         <div className="slds-media__body">
@@ -48,7 +51,6 @@ export default class App extends React.Component {
     }
 
     handleAddClick() {
-        console.log("Method Called");
         this.setState({ isAddCardOn: true });
     }
 

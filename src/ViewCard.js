@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-export default class NewNote extends React.Component {
+export default class ViewCard extends React.Component {
     render() {
         return (
             <div className="slds-box_border slds-box_shadow">
@@ -14,15 +14,8 @@ export default class NewNote extends React.Component {
                         </div>
                         <div className="slds-no-flex">
                             <div className="slds-button-group" role="group">
-                                <button className="slds-button slds-button_brand">Save</button>
-                                <button
-                                    className="slds-button slds-button_destructive"
-                                    onClick={() => {
-                                        this.handleClose();
-                                    }}
-                                >
-                                    Cancel
-                                </button>
+                                <button className="slds-button slds-button_brand">Edit</button>
+                                <button className="slds-button slds-button_destructive">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -50,9 +43,5 @@ export default class NewNote extends React.Component {
                 </div>
             </div>
         );
-    }
-
-    handleClose() {
-        this.props.onClose();
     }
 }
