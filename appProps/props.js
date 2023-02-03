@@ -3,5 +3,6 @@ module.exports = {
     mysqlPort: 8000,
     expressServer: "localhost",
     expressPort: 3001,
-    mysqlPassqord: "manan",
+    mysqlPassword: "manan",
+    mysqlUser: "root",
 };

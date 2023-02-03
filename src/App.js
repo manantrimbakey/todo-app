@@ -2,6 +2,7 @@ import { Spinner } from "@salesforce/design-system-react";
 import React from "react";
 import "./index.css";
 import NewNote from "./NewNote";
+import axios from "axios";
 
 export default class App extends React.Component {
     constructor(props) {
@@ -12,10 +13,17 @@ export default class App extends React.Component {
         };
     }
 
+    onInit() {
+        axios
+            .get("https://example.com/api/data")
+            .then((res) => console.log(res.data))
+            .catch((err) => console.log(err));
+    }
+
     render() {
         let data = (
             <div className="slds-card full-width-relative full-height-relative slds-is-relative">
-            {this.state.isSpinnerOn && <Spinner />}
+                {this.state.isSpinnerOn && <Spinner />}
                 <div className="slds-card__header slds-grid">
                     <div className="slds-media slds-media_center slds-has-flexi-truncate">
                         <div className="slds-media__body">

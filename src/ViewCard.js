@@ -9,7 +9,7 @@ export default class ViewCard extends React.Component {
                     <div className="slds-card__header slds-grid">
                         <div className="slds-media slds-media_center slds-has-flexi-truncate">
                             <div className="slds-media__body">
-                                <h2 className="slds-text-heading_small">Create New Note</h2>
+                                {/* <h2 className="slds-text-heading_small">Create New Note</h2> */}
                             </div>
                         </div>
                         <div className="slds-no-flex">
@@ -28,7 +28,7 @@ export default class ViewCard extends React.Component {
                                 </abbr>
                             </label>
                             <div className="slds-form-element__control">
-                                <input type="text" id="noteTitle" className="slds-input" placeholder="Enter Title" />
+                                <input type="text" id="noteTitle" className="slds-input" readOnly placeholder="Enter Title" />
                             </div>
                         </div>
                         <div className="slds-form-element">
@@ -36,7 +36,7 @@ export default class ViewCard extends React.Component {
                                 Rich Text Area
                             </label>
                             <div className="slds-form-element__control">
-                                <textarea id="rich-text-area" className="slds-textarea"></textarea>
+                                <textarea id="rich-text-area" readOnly className="slds-textarea"></textarea>
                             </div>
                         </div>
                     </div>
